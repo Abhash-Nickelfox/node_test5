@@ -1,0 +1,28 @@
+{
+  "stack": "auto",
+  "requireSignedCommits": false,
+  "enabledGates": {
+    "trailing_whitespace":   "enabled",
+    "eof_newline":           "enabled",
+    "large_file_blocker":    "enabled",
+    "binary_detector":       "enabled",
+    "temp_junk_detector":    "enabled",
+    "debug_detector":        "enabled",
+    "secret_scanner":        "enabled",
+    "lockfile_required":     "enabled",
+    "formatter":             "enabled",
+    "lint":                  "enabled",
+    "gitignore_validation":  "enabled",
+    "prevent_main_push":     "enabled",
+    "branch_naming":         "enabled",
+    "commit_msg_lint":       "enabled",
+    "signed_commits":        "not_applicable",
+    "full_lint":             "enabled",
+    "typecheck":             "enabled",
+    "unit_tests":            "enabled",
+    "cve_scan":              "enabled",
+    "docker_scan":           "not_applicable",
+    "db_migration_check":    "not_applicable",
+    "api_schema_diff":       "not_applicable"
+  }
+}

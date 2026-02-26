@@ -1,0 +1,20 @@
+# Gitleaks configuration — NFXinit git-hooks
+# Allowlists placeholder values used in .env.example files.
+# Real secrets MUST never be committed.
+
+title = "NFXinit Gitleaks Config"
+
+[allowlist]
+description = "Safe placeholder strings and scaffold-generated debug files"
+regexes = [
+  '''(?i)REPLACE_ME''',
+  '''(?i)your[_-]?secret[_-]?here''',
+  '''(?i)your[_-]?token[_-]?here''',
+  '''(?i)changeme''',
+  '''(?i)placeholder''',
+]
+paths = [
+  '''.env.example''',
+  '''.env.*.example''',
+  '''debug_.*\.txt''',
+]
